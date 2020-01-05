@@ -89,6 +89,33 @@ width:35px;
   text-align: left;
 }
 
+.iRowMini {
+  width:140px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.iRowMini>tbody>tr>td{
+padding: 0px !important;
+border-top:none !important;
+}
+
+.iRowMini>tbody>tr>td:first-child{
+  width:40px !important;
+  text-align: right;
+  font-weight: bold;
+}
+
+.iRowMini>tbody>tr>td:first-child{
+  width:40px !important;
+  text-align: right;
+  font-weight: bold;
+}
+
+.iRowMini>tbody>tr>td:last-child{
+  text-align: left;
+  padding-left: 10px !important;
+}
+
 #linkAsec {
   font-size:13px
 }
