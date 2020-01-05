@@ -1,0 +1,117 @@
+body {
+  background-image: linear-gradient(to right, #005a99, #0084e1);
+  margin-top: 38px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 38px;
+  line-height: 14px;
+  background-color: black;
+  z-index: 99;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+@viewport {
+  width=device-width;
+  initial-scale=1.0;
+  maximum-scale=1.0;
+  user-scalable=0
+}
+
+@-ms-viewport {
+  width=device-width;
+  initial-scale=1.0;
+  maximum-scale=1.0;
+  user-scalable=0;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+  color: #fff;
+  background-color: red;
+}
+
+.rowTop, .rowHead {
+  background-color: #d9d9d9;
+}
+
+.rowHead>td {
+  padding-top:0px !important;
+  border-top:0px solid black !important;
+}
+
+.iRow>td,
+.tabNote>td {
+  border-top: 1px solid black;
+  padding: 5px;
+}
+
+.rowHead>td, .iRowSub>td {
+  padding: 5px;
+}
+
+.head1,
+.headDate,
+.headDet {
+  font-weight: bold;
+}
+
+.headDet, .rowDet {
+  text-align: left;
+}
+
+.headPM {
+width:10%;
+}
+
+.head1 {
+  width: 30%;
+}
+
+.headDate {
+  width: 100px;
+}
+
+.iRow{
+  background-color: #ffff66;
+}
+
+.iRowSub{
+  background-color: #ffff99;
+  text-align: left;
+}
+
+.aRow{
+  background-color: #66ff66;
+}
+
+.aRowSub{
+  background-color: #99ff99;
+  text-align: left;
+}
+
+.iRowMini>tbody>tr:first-child{
+  font-weight: bold;
+  text-align: left;
+}
+
+.iRowMini>tbody>tr:last-child{
+
+}
+
+.iRowMini>tbody>tr>td{
+padding: 0px !important;
+border-top:none !important;
+}
+
+#linkAsec, #linkBsec {
+  font-size:13px
+}
