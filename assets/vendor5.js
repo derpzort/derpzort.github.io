@@ -12,7 +12,7 @@ $(document).ready(function () {
         .animate({ padding: 0 })
         //.wrapInner('<div />')
         .children()
-        .slideUp(function () { $(this).closest('tr').toggle(); });
+        .slideUp("fast", function () { $(this).closest('tr').toggle(); });
 
       $(this).attr("show", 0);
 
@@ -25,7 +25,7 @@ $(document).ready(function () {
         .animate({ padding: 5 })
         // .wrapInner('<div />')
         .children()
-        .slideDown(function () { $(this).closest('tr').toggle(); });
+        .slideDown("fast", function () { $(this).closest('tr').toggle(); });
 
       $(this).attr("show", 1);
 
@@ -47,7 +47,7 @@ $(document).ready(function () {
         .animate({ padding: 0 })
         //.wrapInner('<div />')
         .children()
-        .slideUp(function () { $(this).closest('tr').toggle(); });
+        .slideUp("fast", function () { $(this).closest('tr').toggle(); });
 
       $(this).attr("show", 0);
 
@@ -60,7 +60,42 @@ $(document).ready(function () {
         .animate({ padding: 5 })
         // .wrapInner('<div />')
         .children()
-        .slideDown(function () { $(this).closest('tr').toggle(); });
+        .slideDown("fast", function () { $(this).closest('tr').toggle(); });
+
+      $(this).attr("show", 1);
+
+    }
+
+
+  });
+
+  $('.bRow').click(function () {
+
+    let show = $(this).attr("show");
+
+    if (show == "1") {
+
+      $(this).children().children("i").toggle();
+
+      $(this).next("tr")
+        .children('td, th')
+        .animate({ padding: 0 })
+        //.wrapInner('<div />')
+        .children()
+        .slideUp("fast", function () { $(this).closest('tr').toggle(); });
+
+      $(this).attr("show", 0);
+
+    } else {
+
+      $(this).children().children("i").toggle();
+
+      $(this).next("tr")
+        .children('td, th')
+        .animate({ padding: 5 })
+        // .wrapInner('<div />')
+        .children()
+        .slideDown("fast", function () { $(this).closest('tr').toggle(); });
 
       $(this).attr("show", 1);
 

@@ -98,6 +98,15 @@ width:10%;
   text-align: left;
 }
 
+.bRow{
+  background-color: #66b3ff;
+}
+
+.bRowSub{
+  background-color: #99ccff;
+  text-align: left;
+}
+
 .iRowMini>tbody>tr:first-child{
   font-weight: bold;
   text-align: left;
@@ -112,6 +121,6 @@ padding: 0px !important;
 border-top:none !important;
 }
 
-#linkAsec, #linkBsec {
+#linkAsec, #linkBsec, #linkCsec {
   font-size:13px
 }
